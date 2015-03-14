@@ -1,0 +1,23 @@
+.cover {
+  height: 100%;
+}
+.home-logo {
+  width: 15%;
+  margin-top: 5%;
+}
+.arrow-icon {
+  position: absolute;
+  width: 6%;
+  bottom: 5%;
+  left: 47%;
+}
+.button-large {
+  @extend .button-pri;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 100;
+  color: $white-base;
+}
+.button-large:hover {
+  color: $white-base;
+}
