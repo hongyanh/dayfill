@@ -6,13 +6,13 @@ function getData() {
   recordQuery.each(
     function(result){
       totalAmount += result.get('amount');
-      if (totalAmount != currentAmount) {
-        $('#amount').text(totalAmount.toFixed(2));
-        currentAmount = totalAmount;
-      }
     }, {
       success: function() {
         // looped through everything
+        if (totalAmount != currentAmount) {
+          $('#amount').text(totalAmount.toFixed(2));
+          currentAmount = totalAmount;
+        }
       },
       error: function(error) {
         // error is an instance of Parse.Error.
