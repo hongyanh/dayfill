@@ -985,4 +985,7 @@ nav > ul > li {
 .stats h1 {
   font-size: 10rem; }
 
+iframe {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
